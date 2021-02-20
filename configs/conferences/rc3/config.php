@@ -28,14 +28,14 @@ $CONFIG['CONFERENCE'] = array(
 	 * Der Boolean true ist aus Abwärtskompatibilitätsgründen äquivalent zu 'after'. False ist äquivalent
 	 * zu 'running'.
 	 */
-	//'CLOSED' => 'running',
+	'CLOSED' => 'running',
 
 	/**
 	 * Titel der Konferenz (kann Leer- und Sonderzeichen enthalten)
 	 * Dieser im Seiten-Header, im <title>-Tag, in der About-Seite und ggf. ab weiteren Stellen als
 	 * Anzeigetext benutzt
 	 */
-	'TITLE' => 'rC3', 
+	'TITLE' => 'rC3 Test', 
 
 	/**
 	 * Veranstalter
@@ -130,21 +130,21 @@ $CONFIG['OVERVIEW'] = array(
 		),
 		'Assemblies Live' => array(
 			'bitwaescherei',
-			//'cbase',
-			//'chaosstudio-hamburg',
+			'cbase',
+			'chaosstudio-hamburg',
 			'chaostrawler',
 			'cwtv',
-			//'hacc',
+			'hacc',
 			'kreaturworks',
-			//'oio',
-			//'r3s',
-			//'restrealitaet',
-			//'sendezentrum',
+			'oio',
+			'r3s',
+			'restrealitaet',
+			'sendezentrum',
 			'wikipaka',
 			'xhain',
 			'franconiannet',
 			'infobeamer',
-			//'chaoszone',
+			'chaoszone',
 		),
 	),
 );
@@ -905,7 +905,7 @@ $CONFIG['SCHEDULE'] = array(
 	 *
 	 * Wird diese Zeile auskommentiert, werden alle Räume angezeigt
 	 */
-	'ROOMFILTER' => array('rC3 Lounge', 'Bitwäscherei Zürich', 'ChaosTrawler', 'xHain Berlin'),
+	//'ROOMFILTER' => array('rC3 Lounge', 'Bitwäscherei Zürich', 'ChaosTrawler', 'xHain Berlin'),
 
 	/**
 	 * Skalierung der Programm-Vorschau in Sekunden pro Pixel
@@ -918,7 +918,7 @@ $CONFIG['SCHEDULE'] = array(
 	 * Diese folgende Beispiel-Zeile Simuliert, dass das
 	 * Konferenz-Datum 2014-12-29 auf den heutigen Tag 2015-02-24 verschoben ist.
 	 */
-	//'SIMULATE_OFFSET' => strtotime(/* Conference-Date */ '2020-12-27') - strtotime(/* Today */ date("Y-m-d")),
+	'SIMULATE_OFFSET' => strtotime(/* Conference-Date */ '2020-12-27') - strtotime(/* Today */ date("Y-m-d")),
 	//'SIMULATE_OFFSET' => 0,
 );
 
